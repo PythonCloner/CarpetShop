@@ -1,0 +1,117 @@
+div.vertical-line{
+    background-color: grey;
+    height: 20px;
+    width: 2px;
+}
+svg{
+    cursor: pointer;
+}
+.rounded{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    border: none;
+    outline: 2px solid purple;
+    outline-offset: 2px;
+}
+ul>li.list-inline-item{
+    cursor: pointer;
+}
+footer{
+    background-color: #7f8c8d;
+    padding: 20px;
+}
+.offers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+/* .offer-item{
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+} */
+.cover-container{
+    position: relative;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.offers::-webkit-scrollbar{
+    display: none;
+}
+.offers{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.list-inline-arrow-container{
+    position: relative;
+}
+.left-arrow-btn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.right-arrow-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.navigation{
+    display: flex;
+    flex-direction:column;
+    /* position: relative; */
+}
+.navigation > .section-nav-I{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation > .section-nav-II{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* position: fixed;
+    bottom: 0; */
+}
+@media screen and (min-width:300px) {
+    .nav{
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (min-width:600px) {
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-nav-I{
+
+    }
+    .section-nav-II{
+        
+    }
+
+}
+@media screen and (min-width:860px) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+}

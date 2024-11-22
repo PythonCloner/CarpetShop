@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpet</title>
+    <link href="./bootstrap.min.css" rel="stylesheet"/>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- navigation bar section (HEADER SECTION) -->
+   <header>
+        <span id="top"></span>
+        <nav class=" container-fluid navigation mt-3 mb-4">
+           <div class="section-nav-I">
+                <span class="h3 d5 fw-bolder text-secondary text-uppercase font-monospace me-3">Carpet Shop</span>
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </span>
+                        <input type="search" class="form-control" id="">
+                    </div>
+                </form>
+           </div>
+           <div class="section-nav-II">
+                <div class="cart btn btn-outline-secondary">
+                    <span class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="account btn btn-outline-secondary ms-3 me-3>
+                    <span class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                    </span>
+                </div>
+           </div>
+        </nav>
+
+        <ul class="nav">
+            <div class="dropdown">
+                <button class="btn text-secondary dropdown-toggle link-secondary type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item link-secondary" href="#">Classic Carpet</a></li>
+                <li><a class="dropdown-item link-secondary" href="#">Modern Carpet</a></li>
+                <li><a class="dropdown-item link-secondary" href="#">Machine Carpet</a></li>
+                <li><a class="dropdown-item link-secondary" href="#">Hand Made Carpet</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item link-secondary" href="#">Hand Made Carpet</a></li>
+                </ul>
+            </div>
+            <li class="nav-item"><a href="" class="nav-link text-secondary link-secondary">Discount</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-secondary link-secondary">Gift Card</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-secondary link-secondary">Become seller</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-secondary link-secondary">About Us</a></li>
+            <li class="nav-item m-auto me-5 mb-3">
+                <button type="button" class="btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                    Choose your location
+                </button>
+            </li>
+        </ul>
+   </header>
+
+
+
+
+<!-- MAIN SECTION OF WEBSITE -->
+    <main>
+        <a href="#top" class="position-fixed bottom-0 end-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg>
+        </a>
+        <!-- our sellers -->
+        <div class="ms-4 me-4 mb-5 list-inline-arrow-container">
+            <h1 class="d-block text-center fw-bolder mb-4">Our Sellers</h1>
+
+            <!-- right Arrow Btn -->
+            <button type="button" class="right-arrow-btn btn btn-secondary" onclick="leftArrowBtn()">></button>  
+            <div class="list-inline offers d-flex vortex">
+
+                <!-- 1 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 2 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 3 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 4 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 5 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 6 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 7 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 8 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 9 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+        
+                <!-- 10 -->
+                <li class="list-inline-item"><img src="./pictures/Person/1.svg" alt="" class="rounded me-3"><small class="text-center">Lorem ipsum dolor sit amet.</small></li>
+
+            </div>
+
+            <!-- left Arrow Button -->
+            <button type="button" class="left-arrow-btn btn btn-secondary" onclick="rightArrowBtn()"><</button>
+        </div>
+
+
+        <!-- Slider -->
+        <div class="carousel slide carousel-light" id="slideExample" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slideExample" data-bs-slide-to="0" class="active"></button>
+    
+                <button type="button" data-bs-target="#slideExample" data-bs-slide-to="1"></button>
+    
+                <button type="button" data-bs-target="#slideExample" data-bs-slide-to="2"></button>
+    
+                <button type="button" data-bs-target="#slideExample" data-bs-slide-to="3"></button>
+    
+                <button type="button" data-bs-target="#slideExample" data-bs-slide-to="4"></button>
+              </div>        
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./pictures/carpet.jpg" class="d-block w-100" style="height: 600px;" alt="">
+                    <div class="carousel-caption">
+                        <h5>First Slide Label</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ducimus.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <img src="./pictures/classic carpet.jpg" class="d-block w-100" style="height: 600px;" alt="">
+                    <div class="carousel-caption">
+                        <h5>Second Slide Label</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam amet architecto nihil sit id excepturi porro, perspiciatis minima autem!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="30000">
+                    <img src="./pictures/hand made carpet.webp" class="d-block w-100" style="height: 600px;" alt="">
+                    <div class="carousel-caption">
+                        <h5>Third Slide Label</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa aperiam non illo enim rerum tenetur corporis at repellat, culpa sint recusandae nostrum tempora fugiat eaque provident obcaecati optio quam!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="40000">
+                    <img src="./pictures/kashan-carpet.jpg" class="d-block w-100" style="height: 600px;" alt="">
+                    <div class="carousel-caption">
+                        <h5>Fourth Slide Label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quo perspiciatis nihil repellendus iusto quia quis? Nesciunt iusto laudantium porro in culpa vitae vel eos, sit alias saepe quidem dolorum ut aliquid soluta maxime maiores. Nostrum non delectus iusto aliquid.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="50000">
+                    <img src="./pictures/machine carpet.jpg" class="d-block w-100" style="height: 600px;" alt="">
+                    <div class="carousel-caption text-white">
+                        <h5>Fifth Slide Label</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto eum qui ducimus et, repudiandae at assumenda dolorem. Quos eos perspiciatis quo quisquam. Tempore quod laudantium atque consequatur natus praesentium tenetur quam nesciunt, sunt obcaecati dignissimos perferendis dolorum sed voluptatem sint eos placeat esse dolore enim beatae? At, animi iste!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slideExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#slideExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+
+
+        <!-- OFFERS -->
+        <div class="container-fluid mt-5 cover-container">
+
+            <button type="button" class="left btn btn-dark ms-3 me-3" onclick="rightScroll()"><</button>
+
+            <div class="list-inline offers bg-secondary-subtle bg-gradient cover">
+                
+                <div class="d-flex flex-column p-5">
+                    <p class="fs-5 d-5 fw-bolder">Amazing Offers</p>
+                </div>
+
+                <!-- 1 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/1.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1800</b>
+                </li>
+
+                <!-- 2 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/2.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1700</b>
+                </li>
+
+                <!-- 3 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/3.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1600</b>
+                </li>
+
+                <!-- 4 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/4.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1500</b>
+                </li>
+
+                <!-- 5 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/5.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1400</b>
+                </li>
+
+                <!-- 6 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/6.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1300</b>
+                </li>
+
+                <!-- 7 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/7.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1200</b>
+                </li>
+
+                <!-- 8 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/8.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1100</b>
+                </li>
+
+                <!-- 9 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/9.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$1000</b>
+                </li>
+
+                <!-- 10-->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/10.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$900</b>
+                </li>
+
+                <!-- 11 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/11.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$800</b>
+                </li>
+
+                <!-- 12 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/12.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$700</b>
+                </li>
+
+                <!-- 13 -->
+                <li class="list-inline-item bg-white mt-2 mb-2">
+                    <img src="./pictures/Offers/13.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$600</b>
+                </li>
+
+                <!-- 14 -->
+                <li class="list-inline-item bg-white mt-2 mb-2 me-2">
+                    <img src="./pictures/Offers/14.webp" style="width: 12rem;" alt="" class="offer-item">
+                    <b class="fw-bolder h6 d-block text-center">$4500</b>
+                </li>
+                
+            </div>
+            <button type="button" class="right btn btn-dark ms-3 me-3" onclick="leftScroll()">></button>
+        </div>
+
+
+
+
+
+        <!-- Products -->
+        <div class="col-12">
+            <p class="text-uppercase text-center mt-5 fw-bolder fs-6">our products</p>
+            <div class="container d-flex flex-wrap justify-content-between align-content-around">
+                <!-- 1 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش تیگران.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">tigran carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$400</b><br><br>
+                        <span date-card-identity="1"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش دستبافت مدل محرمات.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">hand made carpet type II</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$850</b><br><br>
+                        <span date-card-identity="2"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش دستبافت.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">hand made carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$650</b><br><br>
+                        <span date-card-identity="3"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش دنیای فرش.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">donya carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$200</b><br><br>
+                        <span date-card-identity="4"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش رادین.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">radin carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$950</b><br><br>
+                        <span date-card-identity="5"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ستاره طلایی.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">golden star carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$1100</b><br><br>
+                        <span date-card-identity="6"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش لچک.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">lechac carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$650</b><br><br>
+                        <span date-card-identity="7"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی زانیس مدل مدرن.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">new classic carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$350</b><br><br>
+                        <span date-card-identity="8"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی ساوین.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">classic carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$900</b><br><br>
+                        <span date-card-identity="9"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی طرح پلاتینیوم.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">machine carpet type V</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$1000</b><br><br>
+                        <span date-card-identity="10"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی مارکت تریتا.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">machine carpet type IV</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$700</b><br><br>
+                        <span date-card-identity="11"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی مدل زانیس.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">machine carpet type III</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$490</b><br><br>
+                        <span date-card-identity="12"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی مدما.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">machine carpet type II</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$600</b><br><br>
+                        <span date-card-identity="13"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/فرش ماشینی.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">machine carpet</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$500</b><br><br>
+                        <span date-card-identity="14"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+                <!-- 15 -->
+                <div class="card mb-5" style="width: 13rem;">
+                    <img src="./pictures/Carpets/گلیم.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title fw-bolder text-center">gelim</div>
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga repellendus sequi veritatis aut quidem delectus provident alias? Sequi, animi?
+                        </div>
+                        <b class="mt-3">$480</b><br><br>
+                        <span date-card-identity="15"></span>
+                        <button type="button" class="btn btn-outline-secondary">Add to Card</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER SECTION OF WEBSITE -->
+    <footer>
+        <p class="text-center">Designed by <small class="text-danger fw-bolder">PythonCloner</small></p>
+        <ul class="list-inline d-flex justify-content-center">
+            <h4 class="d-inline-block me-2">Follow Us: </h4>
+            <li class="list-inline-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+            </li>
+            <li class="list-inline-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+            </li>
+            <li class="list-inline-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+            </li>
+            <li class="list-inline-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg>
+            </li>
+        </ul>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
